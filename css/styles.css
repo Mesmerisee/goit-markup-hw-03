@@ -28,7 +28,7 @@ body {
 }
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -74,7 +74,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
-  padding: 24px 156px 24px 76px;
+  padding: 24px 76px 24px 0;
 }
 .header-link-span {
   color: #4d5ae5;
@@ -94,7 +94,6 @@ body {
 }
 .header-address {
   margin-left: auto;
-  margin-right: 156px;
 }
 .header-address-list {
   display: flex;
@@ -114,11 +113,10 @@ body {
 }
 /*---------------hero---------------*/
 .hero {
+  background: #2e2f42;
 }
 .hero-container {
-  background: #2e2f42;
-  padding: 188px 472px;
-  flex-grow: 1;
+  padding: 188px 316px;
 }
 .hero-title {
   font-size: 56px;
@@ -132,18 +130,16 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--secondary-title-color);
   cursor: pointer;
   background: #4d5ae5;
   display: block;
   margin: auto;
-  padding: 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  min-width: 169px;
+  padding: 16px 32px;
+  gap: 10px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -151,55 +147,54 @@ body {
 }
 /*---------------services---------------*/
 .services {
-  padding: 120px 0;
 }
 .services-container {
-  padding: 0 156px;
 }
 .services-content {
 }
 .services-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-grow: 1;
   gap: 24px;
 }
 .services-item {
-  width: calc((100% - 72px) / 4);
 }
 .services-subtitle {
   font-size: 20px;
-  margin-bottom: 8px;
+  padding-top: 120px;
+  max-width: 264px;
 }
 .services-description {
   color: var(--text-color);
   font-weight: 400;
+  margin-top: 8px;
 }
-/*---------------services---------------*/
+/*---------------gallery---------------*/
 .gallery {
 }
 .gallery-content {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  padding: 0 156px;
 }
 .gallery-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
+  padding-top: 120px;
   margin-bottom: 72px;
 }
 .gallery-list {
 }
 .gallery-item {
-  width: calc((100% - 48px) / 3);
 }
 /*---------------team---------------*/
 .team {
+  background: #f4f4fd;
 }
 .team-container {
-  background: #f4f4fd;
+  padding-bottom: 120px;
 }
 .team-title {
   font-size: 36px;
@@ -213,17 +208,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  padding: 0 156px;
 }
 .team-item {
-  width: calc((100% - 72px) / 4);
 }
 .team-content {
-  padding: 32px 16px;
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 4px;
+  border-radius: 0px 0px 4px 4px;
+  padding: 32px 16px;
 }
 .team-subtitle {
   font-size: 20px;
@@ -237,10 +230,9 @@ body {
 }
 /*---------------footer---------------*/
 .footer {
+  background: #2e2f42;
 }
 .footer-container {
-  background: #2e2f42;
-  padding: 100px 156px;
 }
 .footer-link {
   font-family: var(--secondary-text-font);
@@ -251,12 +243,13 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  padding-top: 100px;
   margin-bottom: 16px;
-  padding-top: 120px;
 }
 .footer-description {
   color: #e7e9fc;
   font-weight: 400;
+  padding-bottom: 100px;
   max-width: 264px;
 }
 /*---------------portfolio---------------*/
@@ -265,11 +258,13 @@ body {
 .button-content {
   display: flex;
   gap: 24px;
-  padding: 96px 427px 72px;
+  padding: 96px 240px 72px 240px;
 }
 .portfolio-list {
 }
 .portfolio-item {
+  margin: 0 auto;
+  display: block;
 }
 .portfolio-button {
   font-family: inherit;
@@ -280,8 +275,6 @@ body {
   color: #4d5ae5;
   cursor: pointer;
   background: #f4f4fd;
-  display: block;
-  margin: auto;
   padding: 12px 24px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
@@ -290,6 +283,17 @@ body {
 .portfolio-button:focus {
   color: #ffffff;
   background: #404bbf;
+}
+.portfolio-content {
+  background: #ffffff;
+  border: 1px solid #e7e9fc;
+  margin-bottom: 48px;
+}
+.portfolio-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 .portfolio-pictures-list {
   display: flex;
@@ -300,7 +304,12 @@ body {
 }
 .portfolio-title {
   font-size: 20px;
+  padding-top: 32px;
+  margin-left: 16px;
 }
 .portfolio-description {
   color: var(--text-color);
+  margin-top: 8px;
+  padding-bottom: 16px;
+  margin-left: 16px;
 }
