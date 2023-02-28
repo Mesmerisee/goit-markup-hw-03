@@ -115,7 +115,7 @@ body {
 /*---------------hero---------------*/
 .hero {
   background: #2e2f42;
-  padding: 188px 316px;
+  padding: 188px 0;
 }
 .hero-title {
   font-size: 56px;
@@ -162,9 +162,6 @@ body {
 }
 .services-item {
   width: calc((100% - 72px) / 4);
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 .services-subtitle {
   font-size: 20px;
@@ -177,7 +174,7 @@ body {
 }
 /*---------------gallery---------------*/
 .gallery {
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 .gallery-content {
   display: flex;
@@ -189,26 +186,27 @@ body {
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 .gallery-list {
 }
 .gallery-item {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /*---------------team---------------*/
 .team {
   background: #f4f4fd;
+  padding: 120px 0;
 }
 .team-container {
-  padding-bottom: 120px;
 }
 .team-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 .team-list {
@@ -262,14 +260,13 @@ body {
 /*---------------portfolio---------------*/
 .portfolio {
   padding-top: 96px;
-}
-.button-content {
-  display: flex;
-  gap: 24px;
-  margin-bottom: 72px;
-  padding: 0 271px;
+  padding-bottom: 120px;
 }
 .portfolio-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 .portfolio-item {
 }
@@ -297,12 +294,6 @@ body {
   border: 1px solid #e7e9fc;
   border-top: none;
   padding: 32px 16px;
-}
-.portfolio-block {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  padding-bottom: 120px;
 }
 .portfolio-pictures-list {
   display: flex;
